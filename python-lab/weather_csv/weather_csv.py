@@ -1,17 +1,17 @@
 # 1
-# with open("weather_data.csv") as data_file:
-#     data = data_file.readlines()
-# print(data)
+with open("weather_data.csv") as data_file:
+    data = data_file.readlines()
+print(data)
 
 # 2
-# import csv
-# with open("weather_data.csv") as data_file:
-#     data = csv.reader(data_file)
-#     temperatures = []
-#     for row in data:
-#         if row[1] != "temp":
-#             temperatures.append(row[1])
-#     print(temperatures)
+import csv
+with open("weather_data.csv") as data_file:
+    data = csv.reader(data_file)
+    temperatures = []
+    for row in data:
+        if row[1] != "temp":
+            temperatures.append(row[1])
+    print(temperatures)
 
 # 3
 import pandas
